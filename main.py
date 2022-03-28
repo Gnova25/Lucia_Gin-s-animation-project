@@ -9,8 +9,8 @@ os.environ['SDL_VIDEO_CENTERED'] = '1'
 pygame.init()
 
 # constants
-WIDTH = 400
-HEIGHT = 300
+WIDTH = 1440
+HEIGHT = 900
 FPS = 4
 
 # RGB colors
@@ -33,7 +33,7 @@ pygame.image.load('./assets/sherry_4.png')
 
 # changes size of all images to fit screen
 for i in range(len(my_images)):
-  my_images[i] = pygame.transform.scale(my_images[i], (150, 150))
+  my_images[i] = pygame.transform.scale(my_images[i], (300, 300))
 
 # set Window
 WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -72,7 +72,7 @@ def drawShape():
   global image_count
   if (image_count == 4):
      image_count = 0
-  WINDOW.blit(my_images[image_count], (0, 100))
+  WINDOW.blit(my_images[image_count], (570, 300))
   pygame.display.flip()
   image_count += 1
   
