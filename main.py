@@ -41,7 +41,7 @@ pygame.display.set_caption("flower :)")
 WINDOW.fill(white)
 
 # set up your font
-font = pygame.font.Font('./fonts/Montserrat-Light.ttf', 12)
+font = pygame.font.Font('./fonts/Montserrat-Light.ttf', 24)
 
 # create your text
 text = font.render('growth is growth, no matter how small.', True, black, white)
@@ -54,11 +54,11 @@ credsRect2 = text.get_rect()
 creds3 = font.render('& Gin N',True, black,white)
 credsRect3 = text.get_rect()
 # position the text
-textRect.center = (275, 100)
+textRect.center = (WIDTH // 2, 150)
 
-credsRect.center = (275, 200)
-credsRect2.center = (275, 215)
-credsRect3.center = (275, 230)
+credsRect.center = (275, 70)
+credsRect2.center = (275, 100)
+credsRect3.center = (275, 130)
 # display text
 WINDOW.blit(text, textRect)
 WINDOW.blit(creds, credsRect)
